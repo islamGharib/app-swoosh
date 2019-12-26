@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        /*
                             // working with frames -> every frame has a position and size
         swoosh.frame = CGRect(x: view.frame.size.width/2 - swoosh.frame.size.width/2, y: 50, width: swoosh.frame.size.width, height: swoosh.frame.size.height)
         
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         goAllLab.frame = CGRect(x: view.frame.size.width/2 - goAllLab.frame.size.width/2, y: 133, width: goAllLab.frame.size.width, height: goAllLab.frame.size.height)
         
         startedBtn.frame = CGRect(x: view.frame.size.width/2 - startedBtn.frame.size.width/2, y: view.frame.size.height - startedBtn.frame.size.height - 50, width: startedBtn.frame.size.width, height: startedBtn.frame.size.height)
-        
+        */
         
     }
     
