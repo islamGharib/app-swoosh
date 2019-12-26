@@ -60,6 +60,12 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bgImg" destination="Zhp-Vk-nCS" id="OjS-eu-eWO"/>
+                        <outlet property="goAllLab" destination="oKS-a6-wIk" id="JPC-NQ-JdH"/>
+                        <outlet property="startedBtn" destination="xAe-Yc-3qu" id="8f9-aB-40j"/>
+                        <outlet property="swoosh" destination="KAH-8v-NG0" id="Hnv-4W-s5x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
