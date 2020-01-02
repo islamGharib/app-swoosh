@@ -49,6 +49,9 @@
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="vbG-SM-kIL" kind="show" id="6JU-73-JKx"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a team in your city &amp; dominate the leage" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nus-jl-Jqu">
                                 <rect key="frame" x="55.5" y="249" width="264.5" height="44"/>
@@ -153,6 +156,17 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6D-BW-QrB">
+                                <rect key="frame" x="0.0" y="10" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4fU-h3-sOj"/>
+                                    <constraint firstAttribute="width" constant="50" id="Qlx-ID-0jE"/>
+                                </constraints>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="B3P-EL-pmm" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="TTp-Jc-3r1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -161,6 +175,7 @@
                             <constraint firstItem="MOy-Ii-UpP" firstAttribute="leading" secondItem="1eN-Xg-AHR" secondAttribute="leading" id="4o5-3g-SWZ"/>
                             <constraint firstItem="MOy-Ii-UpP" firstAttribute="top" secondItem="1eN-Xg-AHR" secondAttribute="top" constant="20" id="Ap0-Xj-g4E"/>
                             <constraint firstItem="Km3-KN-8GT" firstAttribute="leading" secondItem="1eN-Xg-AHR" secondAttribute="leading" constant="16" id="B5v-tJ-TUq"/>
+                            <constraint firstItem="j6D-BW-QrB" firstAttribute="leading" secondItem="1eN-Xg-AHR" secondAttribute="leading" id="HQR-DG-mPE"/>
                             <constraint firstItem="1eN-Xg-AHR" firstAttribute="trailing" secondItem="8kv-pN-8he" secondAttribute="trailing" id="JUw-be-pCF"/>
                             <constraint firstItem="1eN-Xg-AHR" firstAttribute="trailing" secondItem="MOy-Ii-UpP" secondAttribute="trailing" id="P1d-mE-XHD"/>
                             <constraint firstItem="sxo-Yg-7TJ" firstAttribute="trailing" secondItem="1eN-Xg-AHR" secondAttribute="trailing" id="Snx-Hd-G48"/>
@@ -168,14 +183,16 @@
                             <constraint firstItem="sxo-Yg-7TJ" firstAttribute="leading" secondItem="1eN-Xg-AHR" secondAttribute="leading" id="efQ-wA-u0d"/>
                             <constraint firstItem="sxo-Yg-7TJ" firstAttribute="bottom" secondItem="1eN-Xg-AHR" secondAttribute="bottom" id="fCY-Ow-k57"/>
                             <constraint firstItem="8kv-pN-8he" firstAttribute="leading" secondItem="1eN-Xg-AHR" secondAttribute="leading" id="hev-ZY-d3o"/>
+                            <constraint firstItem="j6D-BW-QrB" firstAttribute="top" secondItem="ZWK-cb-aEL" secondAttribute="top" constant="10" id="sXP-rR-dgu"/>
                             <constraint firstItem="1eN-Xg-AHR" firstAttribute="trailing" secondItem="Km3-KN-8GT" secondAttribute="trailing" constant="16" id="yIa-2a-uFE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1eN-Xg-AHR"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sGn-qe-QVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="B3P-EL-pmm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="536.79999999999995" y="143.47826086956522"/>
+            <point key="canvasLocation" x="604" y="143.47826086956522"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Rv5-fF-N0K">
@@ -266,6 +283,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="29" height="24"/>
         <image name="beginnerBallerBG" width="414" height="736"/>
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>

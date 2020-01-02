@@ -33,10 +33,9 @@ class ViewController: UIViewController {
         
     }
     
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // go to back to the previous screen
+    @IBAction func unwindFromSkillVC(unwindSegue: UIStoryboardSegue){
+        
     }
 
 
