@@ -35,7 +35,12 @@ class LeagueVC: UIViewController {
         nextBtn.isEnabled = true
     }
     
-    
+    // passing data between view controllers
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let skillVC = segue.destination as? SkillVC{
+            skillVC.player = player
+        }
+    }
 
     /*
     // MARK: - Navigation
